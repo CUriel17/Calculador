@@ -1,0 +1,165 @@
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+iframe{
+  width: 80%;
+  height: 150vh;
+}
+#nav{
+  width:97%;
+  height: 40px;
+  border-radius: 5px;
+  float:left;
+  margin:0 0 3em;padding:0;
+  list-style:none;
+  background-color:  #f4f6f7 ;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom:.063em solid #ccc;border-top:.063em solid #ccc
+}
+li{
+  float:left;border-right:.063em solid #ccc;
+}
+li a{
+  display:block;
+  padding:.375em .75em;
+  text-decoration:none;
+  margin-right:unset; 
+  font-weight:700;color:rgb(0, 0, 0)
+
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(5, 5, 5);
+}
+.top-left {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+.clearfix {
+  overflow: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 20px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 20px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}  

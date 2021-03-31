@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HN_Calculator_IPV4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href='CSS/Calculadora.css'>
+</head>
+<body id="color">
+	
+		
+	  
+<ul id='nav'>
+    <li><a href='Index.htm'>Inicio</a></li>
+    <li><a href='Subnete0IPV4.html'>Subneteo IPV4</a></li>
+    <li><a href='Subnete0IPV6.html'>Subneteo IPV6</a></li>
+    <li><a href='Direccionamiento.html'>Direccionamiento</a></li>
+    <li><a href='Inventario.html'>Inventario</a></li>
+    <li><a href='Configuraciones/Configuraciones.html'>Configuraciones</a></li>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="https://youtube.com/channel/UCSyzOlVK4-FXbLinQu6BzXg" class="fa fa-youtube"></a>
+</ul>
+<div>
+    <center><h1>HN CALCULADORA IPV4</h1></center>
+</div>
+<p id='question'></p>
+<p>Esta cualculadora te ayuda a optener los datos principales de una sunrede</p>  
+<form onsubmit="return false;">
+	<label>IP address:</label>
+	<input type='text'  id='ip' value='192.168.1.0'/> <br>
+	<label>Prefijo de subred:</label>
+	<input type='text'  id='mask' value='/30'/> <br>
+	<button onClick="calculate();">Calcular</button>
+</form>
+<table  bgcolor="#EEEEEE" cellpadding="2" cellspacing="1">
+	
+	<tr><td>Network Address:</td><td id='netadd'></td></tr>
+	<tr><td>Broadcast:</td><td id='broad'></td></tr>
+	<tr><td>Mascara de subred:</td><td id='netmask'></td></tr>
+	<tr><td>Prefijo de subred:</td><td id='slash'></td></tr>
+	<tr><td>Primer Host:</td><td id='first'></td></tr>
+	<tr><td>Último Host:</td><td id='last'></td></tr>
+	<tr><td>Número Hosts:</td><td id='hosts'></td></tr>
+	<tr><td>Wildcard:</td><td id='wild'></td></tr>
+</table>
+<script type='text/javascript' src="JS/calc.js"></script>
+
+</body>
+<p>Heavy Network:ADRIANA.G.A.A DANIELA.C.A OCTAVIO.J.M URIEL.A.C.V</p>
+</html>

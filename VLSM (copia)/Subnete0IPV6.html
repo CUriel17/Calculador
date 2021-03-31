@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HN_Subneteo_Calculadora_IPv6</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel='stylesheet' type='text/css' href='CSS/SubneteoIPV6.css'>
+    </head>
+<body id="color">
+<ul id='nav'>
+     <li><a href='Index.htm'>Inicio</a></li>
+    <li><a href='Subnete0IPV4.html'>Subneteo IPV4</a></li>
+    <li><a href='Calculadora.html'>Calculadora IPV4</a></li>
+    <li><a href='Direccionamiento.html'>Direccionamiento</a></li>
+    <li><a href='Inventario.html'>Inventario</a></li>
+    <li><a href='Configuraciones/Configuraciones.html'>Configuraciones</a></li>
+    <a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="https://youtube.com/channel/UCSyzOlVK4-FXbLinQu6BzXg" class="fa fa-youtube"></a>
+</ul>
+<div>
+    <center><h1>HN SUBNETEO IPV6</h1></center>
+</div>
+<p>Ingrese una dirección IPv6 y el tamaño de la subred: </p>
+<form onsubmit="return false;">
+	<label>IPv6 address:</label>
+	<input type='text'  id='ip' value='2001:db8::/32' style="width:300px;"/> 
+	<button onClick="calculate();">Calcular</button>
+</form>
+<table  bgcolor="#EEEEEE" cellpadding="2" cellspacing="1">
+	<tr><td>Dirección Address:</td><td id='address'></td></tr>
+	<tr><td>Expandida Address:</td><td id='expanded'></td></tr>
+	<tr><td>Prefijo:</td><td id='prefix'></td></tr>
+	<tr><td>Rango:</td><td id='first'></td></tr>
+	<tr><td></td><td id='last'></td></tr>
+	<tr><td>Número de /64s:</td><td id='64s'></td></tr>
+</table>
+<p>Seleccione una cantidad de subredes o un tamaño de subred para dividir lo anterior en:
+</p>
+<input type='text'  id='subnets' value='4' style="width:60px"/> 
+<button onClick="subnet_subnet();">Calcular</button>
+subredes o 
+<select id ='slashes'>
+</select>
+<button onClick="subnet_slashes();">Calcular</button>
+<p id='facts'>
+Esta calculadora se puede usar para IPv6 de la misma manera que VLSM se usa para planificar una red IPv4. <br>
+La IPv6 puede ser enorme. ¡Esta calculadora puede bloquear su navegador si intenta que calcule miles de millones de subredes!<br>
+Debido a esto, solo se muestran las primeras 999 subredes.
+</p>
+<p id='subnetted'> </p>
+<p>Utilice la calculadora anterior para planificar sus redes IPv6. Debido al enorme tamaño de IPv6, no nos importa la cantidad de hosts en una red. Recuerde que la subred más pequeña recomendada es / 64.</p>
+<script type='text/javascript' src="JS/jsbn.js"></script>
+<script type='text/javascript' src="JS/jsbn2.js"></script>
+<script type='text/javascript' src="JS/ipv6_subnetting.js"></script>
+</body>
+<p>Heavy Network:ADRIANA.G.A.A DANIELA.C.A OCTAVIO.J.M URIEL.A.C.V</p>
+</html>

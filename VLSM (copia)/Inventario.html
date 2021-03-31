@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css">
+  <meta charset="utf-8">
+  <title>HN INVENTARIO </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' type='text/css' href='CSS/Inventario.css'>
+  <script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+  <script src="JS/insertar.js" type="text/javascript"></script>
+</head>
+<body id="color">
+  <div>
+    <ul id='nav'>
+		  <li><a href='Index.htm'>Inicio</a></li>
+      <li><a href='Subnete0IPV4.html'>Subneteo IPV4</a></li>
+      <li><a href='Subnete0IPV6.html'>Subneteo IPV6</a></li>
+		  <li><a href='Calculadora.html'>Calculadora IPV4</a></li>
+		  <li><a href='Direccionamiento.html'>Direccionamiento</a></li>
+		  <li><a href='Configuraciones/Configuraciones.html'>Configuraciones</a></li>
+      <a href="#" class="fa fa-facebook"></a>
+  	  <a href="#" class="fa fa-twitter"></a>
+	    <a href="https://youtube.com/channel/UCSyzOlVK4-FXbLinQu6BzXg" class="fa fa-youtube"></a>
+		</ul>
+	</div>
+<center><h1>HN INVENTARIO </h1></center>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="container">
+  <form>
+  <div class="form-group">
+    <p>
+      <label>ID DEL DISPOSITIVO:</label> <br>
+      <input id="ID" class="form-control" type="text" placeholder="1"><br>
+    </p>
+    <p>
+      <label>NOMBRE DEL DISPOSITIVO:</label> <br>
+      <input id="NOMBRE" class="form-control" type="text" placeholder="HP"><br>
+    </p>
+    <p>
+      <label>MODEDELO DEL DISPOSITIVO:</label> <br>
+      <input id="MODEDELO" class="form-control" type="text" placeholder="ELITEBOOK"> <br>
+    </p>
+    <p>
+      <label>DIRECCION MAC:</label> <br>
+      <input id="DIRECCION_MAC" class="form-control" type="text" placeholder="31:f5:4b:5t:1d:28"> <br>
+    </p>
+    <p>
+      <label>DIRECCION IP:</label> <br>
+      <input id="DIRECCION_IP" class="form-control" type="text" placeholder="192.168.1.1"> <br>
+    </p>
+    <p>
+      <label>UBICACION:</label> <br>
+      <input id="UBICACION" class="form-control" type="text" placeholder="SAIT"> <br>
+    </p>
+    <p>
+      <label>FECHA DE REGISTRO:</label> <br>
+      <input id="FECHA" class="form-control" type="text" placeholder="19 ENERO 2020"> <br>
+    </p>
+    <p>
+      <label>DESCRIPCION DEL EQUIPO:</label> <br>
+      <input id="DESCRIPCION" class="form-control" type="text" placeholder=""> <br>
+    </p>
+   <button id="adicionar" class="btn btn-success" type="button">Adicionar a la tabla</button>
+  </div>
+  </form>
+    <p>Elementos en la Tabla:
+      <div id="adicionados"></div>
+    </p>
+    <table  id="mytable" class="table table-bordered table-hover ">
+      <tr>
+        <th>ID DEL DISPOSITIVO</th>
+        <th>NOMBRE DEL DISPOSITIVO</th>
+        <th>MODEDELO DEL DISPOSITIVO</th>
+        <th>DIRECCION MAC</th>
+        <th>DIRECCION IP</th>
+        <th>UBICACIO</th>
+        <th>FECHA DE REGISTRO</th>
+        <th>DESCRIPCION DEL EQUIPO</th>
+        <th>Eliminar</th>
+      </tr>
+    </table>
+</div>
+</body>
+<p>Heavy Network:ADRIANA.G.A.A DANIELA.C.A OCTAVIO.J.M URIEL.A.C.V</p>
+</html>

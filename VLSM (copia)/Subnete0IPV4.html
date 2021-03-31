@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NH_Subneteo_IPV4</title>
+	<meta name="description" content="Easy but powerful CIDR/VLSM calculator for finding IP addresses, number of hosts, network masks, usable range, etc. Plan a whole network using this one tool " />
+	<meta name="keywords" content="VLSM, CIDR, Calculator, subnet, variable-length, mask, calculate, plan, network, slash" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' type='text/css' href='CSS/SubneteoIPV4.css'>
+</head>
+<body id="color">
+	<diV>
+    	<ul id='nav'>
+			<li><a href='Index.htm'>Inicio</a></li>
+			<li><a href='Subnete0IPV6.html'>Subneteo IPV6</a></li>
+			<li><a href='Calculadora.html'>Calculadora IPV4</a></li>
+			<li><a href='Direccionamiento.html'>Direccionamiento</a></li>
+			<li><a href='Inventario.html'>Inventario</a></li>
+			<li><a href='Configuraciones/Configuraciones.html'>Configuraciones</a></li>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="https://youtube.com/channel/UCSyzOlVK4-FXbLinQu6BzXg" class="fa fa-youtube"></a>
+		</ul>
+	</diV>
+	<div>
+		<center><h1>HN SUBNETEO IPV4</h1></center>
+	</div>
+<form onsubmit="return false;">
+¿Cuántas subredes necesitas crear?<br>
+	<input type='number' id='input_num_of_subnets' min='2' max='999' maxlength="3" placeholder='Subnets'>
+	<div class="hide"></div><br>
+    <button onClick="change_subnet_number();">Aceptar</button>
+    <span id='nets' style="display:none;">4</span>
+</form>
+
+<form onsubmit="return false;" action="Direccionamiento.html" method="POST" >
+	<p>¿Cuál es el prefijo IP de la red en notación de barra (es decir, 192.168.1.0/24)?<br>
+	<input type='text' id='input_network' value='192.168.1.0/24'><span id='not_valid_ip' style="background-color: yellow;"></span></p>
+	<p id='subnet_pargraph'>
+		<span class='column'>ID Subred:</span> <span class='column'>Número de hosts requeridos:</span><br>
+		<input type='text' id='name1' value='Subred1'>
+		<input type='text' id='hosts1' placeholder='Hosts' tabindex='1'><br>
+		<input type='text' id='name2' value='Subred2'>
+		<input type='text' id='hosts2' placeholder='Hosts' tabindex='2'><br>
+		<input type='text' id='name3' value='Subred3'>
+		<input type='text' id='hosts3' placeholder='Hosts' tabindex='3'><br>
+		<input type='text' id='name4' value='Subred4'>
+		<input type='text' id='hosts4' placeholder='Hosts' tabindex='4'><br>
+	</p>
+	<button onClick="vlsm();" >Subnetear</button>
+	<button onClick="clear_form();">Cancelar</button>
+</form>
+<p id='ans'></p>
+<script type="text/javascript" src="JS/vlsm.js"></script>
+</body>
+<p>Heavy Network:ADRIANA.G.A.A DANIELA.C.A OCTAVIO.J.M URIEL.A.C.V</p>
+</html>
